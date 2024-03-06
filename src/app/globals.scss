@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$light-blue: #add8e6;
+$sky-blue: #87ceeb;
+$cobalt-blue: #0047ab;
+$royal-blue: #4169e1;
+$navy: #000080;
+$sea-blue: #2e8b57;
+$teal: #008080;
+$turquoise: #40e0d0;
+$dark-blue: #00008b;
+
+:root {
+	--foreground-rgb: $light-blue;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Helvetica', sans-serif;
+	color: $dark-blue;
+	background-color: $light-blue;
+}
